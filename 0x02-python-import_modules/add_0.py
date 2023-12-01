@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-a = 1
-b = 2
 
 def add(a, b):
     """My addition function
@@ -12,8 +10,12 @@ def add(a, b):
     Returns:
         The return value. a + b
     """
-    return (a + b)
+    return a + b
 
-result = add(a, b)
-print("{} + {} = {}".format(a, b, result))
+if __name__ == "__main__":
+    a = 1
+    b = 2
+
+    result = add(a, b)
+    print(f"{a} + {b} = {result}")
 
